@@ -11,7 +11,6 @@ import java.util.Set;
 import org.junit.Test;
 
 public class GetIPv4 {
-
 	// 创建一个地址集合
 	private Set<InetAddress> ipSet = new HashSet<InetAddress>();
 	
