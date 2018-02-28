@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.junit.Test;
-
+// 获取---本地主机所有的---IPv4地址
 public class GetIPv4 {
 	// 创建一个地址集合
 	private Set<InetAddress> ipSet = new HashSet<InetAddress>();
