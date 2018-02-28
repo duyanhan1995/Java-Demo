@@ -5,7 +5,7 @@ import java.io.File;
 import javax.swing.filechooser.FileSystemView;
 
 import org.junit.Test;
-
+// 获取---当前操作系统的---桌面绝对路径
 public class GetDesktopPath {
 	
 	@Test
