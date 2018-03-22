@@ -12,6 +12,12 @@ import java.util.concurrent.TimeUnit;
  * 以下这些test中的方法，都放在main方法中执行，才能有直观的显示，使用Junit不好观察
  * @author duyanhan
  *
+ *	以下英文原文是重点总结：
+ *  So what are the main differences between the Timer and the ExecutorService solution:
+ *  
+ *  Timer can be sensitive to changes in the system clock; ScheduledThreadPoolExecutor is not
+ *  Timer has only one execution thread; ScheduledThreadPoolExecutor can be configured with any number of threads
+ *  Runtime Exceptions thrown inside the TimerTask kill the thread, so following scheduled tasks won’t run further; with ScheduledThreadExecutor – the current task will be canceled, but the rest will continue to run
  */
 public class UseTimerAndTimerTaskToScheduleATask {
 
